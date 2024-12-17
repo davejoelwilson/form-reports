@@ -36,3 +36,36 @@ A Python tool to generate formatted reports from ConnectWise time entries.
 
 ## Usage
 Run the main script:
+bash
+python connectwise_report/main.py
+
+
+The script will:
+1. Calculate last week's date range (Monday-Friday)
+2. Fetch time entries from ConnectWise
+3. Filter out meeting entries
+4. Generate an HTML debug report
+5. Create a formatted Word document
+
+## Project Structure
+
+form-reports/
+├── connectwise_report/
+│ ├── main.py # Main entry point
+│ ├── utils/ # API and helper functions
+│ └── reports/ # Report generation modules
+├── config/
+│ └── settings.py # Configuration settings
+└── output/ # Generated reports
+
+
+## Error Handling
+- Handles API connection errors
+- Validates date ranges
+- Checks for empty time entries
+- Creates output directory if not exists
+
+## Contributing
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
