@@ -47,18 +47,6 @@ The script will:
 4. Generate an HTML debug report
 5. Create a formatted Word document
 
-## Project Structure
-
-form-reports/
-├── connectwise_report/
-│ ├── main.py # Main entry point
-│ ├── utils/ # API and helper functions
-│ └── reports/ # Report generation modules
-├── config/
-│ └── settings.py # Configuration settings
-└── output/ # Generated reports
-
-
 ## Error Handling
 - Handles API connection errors
 - Validates date ranges
