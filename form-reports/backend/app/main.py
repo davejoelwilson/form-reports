@@ -1,7 +1,8 @@
 from datetime import datetime, timedelta
 import os
 import sys
-# Add the parent directory to sys.path to allow imports from connectwise_report
+
+# Add the backend directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from connectwise_report.config.settings import IGNITE_COMPANY_ID, OUTPUT_DIR
